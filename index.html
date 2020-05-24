@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Firebase Aithentication With Web</h4>
+    <input type="email" name="email" id="useremail" placeholder="Email">
+    <input type="password" name="pass" id="userpassword" placeholder="Password">
+    <button onclick="login()">Login In Account</button>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.5/firebase-auth.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.5/firebase.min.js" integrity="sha256-rDVuH4CE3hS87lGuy7hT+27Faia0NpNPONoYIzeRCa4=" crossorigin="anonymous"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCxjuknxc0wqzlUjP_IDdfoqOBUMH2la1Y",
+    authDomain: "web-login-48d31.firebaseapp.com",
+    databaseURL: "https://web-login-48d31.firebaseio.com",
+    projectId: "web-login-48d31",
+    storageBucket: "web-login-48d31.appspot.com",
+    messagingSenderId: "759280311145",
+    appId: "1:759280311145:web:b18622ca55c23f4cd9bbf8",
+    measurementId: "G-89P2R2QKDN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+</body>
+</html>
